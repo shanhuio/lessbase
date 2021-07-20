@@ -1,0 +1,158 @@
+// Copyright (C) 2021  Shanhu Tech Inc.
+//
+// This program is free software: you can redistribute it and/or modify it
+// under the terms of the GNU Affero General Public License as published by the
+// Free Software Foundation, either version 3 of the License, or (at your
+// option) any later version.
+//
+// This program is distributed in the hope that it will be useful, but WITHOUT
+// ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+// FITNESS FOR A PARTICULAR PURPOSE.  See the GNU Affero General Public License
+// for more details.
+//
+// You should have received a copy of the GNU Affero General Public License
+// along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: normal;
+    src: url('/fonts/roboto/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: italic;
+    font-weight: normal;
+    src: url('/fonts/roboto/Roboto-Italic.ttf');
+}
+
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: bold;
+    src: url('/fonts/roboto/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Roboto Mono";
+    font-style: normal;
+    font-weight: normal;
+    src: url('/fonts/roboto-mono/RobotoMono-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: normal;
+    src: url('/fonts/rubik/Rubik-VariableFont_wght.ttf');
+}
+
+// Higher saturation when brightness is high/low
+
+@gray1: hsl(210, 30%, 13%);
+@gray2: hsl(209, 28%, 23%);
+@gray3: hsl(210, 23%, 36%);
+@gray4: hsl(211, 18%, 49%);
+@gray5: hsl(211, 23%, 70%);
+@gray6: hsl(211, 27%, 80%);
+@gray7: hsl(208, 37%, 90%);
+@gray8: hsl(208, 37%, 95%);
+
+@gray5op: hsla(211, 23%, 70%, 0.5);
+
+@blue1: hsl(205, 100%, 20%);
+@blue2: hsl(203, 85%, 29%);
+@blue3: hsl(205, 94%, 38%);
+@blue4: hsl(205, 100%, 46%);
+@blue5: hsl(205, 88%, 63%);
+@blue6: hsl(205, 96%, 80%);
+@blue7: hsl(206, 71%, 93%);
+
+@green1: hsl(133, 82%, 17%);
+@green2: hsl(135, 74%, 27%);
+@green3: hsl(134, 59%, 39%);
+@green4: hsl(134, 52%, 50%);
+@green5: hsl(134, 70%, 65%);
+@green6: hsl(135, 83%, 77%);
+@green7: hsl(135, 88%, 90%);
+
+@red1: hsl(352, 92%, 24%);
+@red2: hsl(355, 73%, 33%);
+@red3: hsl(356, 63%, 44%);
+@red4: hsl(354, 68%, 55%);
+@red5: hsl(354, 78%, 66%);
+@red6: hsl(353, 82%, 78%);
+@red7: hsl(354, 96%, 90%);
+
+@orange1: hsl(29, 92%, 24%);
+@orange2: hsl(29, 73%, 35%);
+@orange3: hsl(29, 67%, 46%);
+@orange4: hsl(29, 51%, 57%);
+@orange5: hsl(29, 64%, 68%);
+@orange6: hsl(29, 78%, 78%);
+@ornage7: hsl(29, 95%, 90%);
+
+@button-color: @green3;
+@button-hover-color: @green4;
+@font-family: 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+@title-family: 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+@mono-family: 'Roboto Mono', 'Consolas', 'Courier New', 'Courier', monospace;
+@text-color: @gray1;
+
+// font sizes
+@text1: 12px;
+@text2: 14px;
+@text3: 16px;
+@text4: 18px;
+@text5: 24px;
+@text6: 36px;
+@text7: 48px;
+@text8: 54px;
+
+@small: 12px;
+@normal: 14px;
+@big: 16px;
+
+// spacing
+@gap-half: 2px;
+@gap0: 4px;
+@gap1: 7px;
+@gap2: 10px;
+@gap3: 16px;
+@gap4: 24px;
+@gap5: 36px;
+@gap6: 54px;
+@gap7: 72px;
+
+body {
+    font-family: @font-family;
+    margin: 0;
+    padding: 0;
+    font-size: @normal;
+    line-height: 1.5em;
+    color: @text-color;
+    background: #fff;
+}
+
+a { color: @link-color }
+h1, h2, h3, h4, h5, h6 {
+    font-family: @title-family;
+    font-weight: normal;
+    line-height: 1.5em;
+}
+
+code { font-family: @mono-family; }
+pre { font-family: @mono-family; }
+
+.button-std {
+    display: inline-block;
+    text-align: center;
+    padding: @gap2 @gap3 @gap2 @gap3;
+    border-radius: @gap0;
+    font-size: @big;
+    line-height: 1.2em;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 1px 1px @gray5;
+}
