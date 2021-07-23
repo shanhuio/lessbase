@@ -1,9 +1,10 @@
 {
     "name": "@shanhuio/lessbase",
-    "version": "0.1.0",
+    "version": "0.0.0",
     "description": "Misc library",
     "files": [
-        "*.less"
+        "*.less",
+        "fonts/*"
     ],
     "scripts": {
         "test": "echo 'no test' && exit 1"
