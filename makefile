@@ -1,8 +1,8 @@
-.PHONY: build
+.PHONY: build dist
 
 build:
 	npm install
 
-pack:
+dist:
 	npm pack
 	mv shanhuio-lessbase-0.0.0.tgz lessbase.tgz
