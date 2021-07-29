@@ -103,9 +103,9 @@
 @text7: 48px;
 @text8: 54px;
 
-@small: 12px;
-@normal: 14px;
-@big: 16px;
+@small: @text1;
+@normal: @text2;
+@big: @text3;
 
 // spacing
 @gap-half: 2px;
@@ -138,14 +138,25 @@ h1, h2, h3, h4, h5, h6 {
 code { font-family: @mono-family; }
 pre { font-family: @mono-family; }
 
-.button-std {
+.button1 {
     display: inline-block;
     text-align: center;
-    padding: @gap2 @gap3 @gap2 @gap3;
+    padding: @gap1 @gap2 @gap1 @gap2;
     border-radius: @gap0;
-    font-size: @big;
-    line-height: 1.2em;
+    font-size: @text2;
+    line-height: 1.5em;
     cursor: pointer;
     border: none;
     box-shadow: 0 1px 1px @gray5;
+}
+
+.button2 {
+    .button1();
+    padding: @gap2 @gap3 @gap2 @gap3;
+    font-size: @text3;
+    line-height: 1.3em;
+}
+
+.button-std {
+    .button1();
 }
