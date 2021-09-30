@@ -13,6 +13,8 @@
 // You should have received a copy of the GNU Affero General Public License
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
+@import "./base.less"
+
 div.dialog {
     div.dialog-bg {
         position: fixed;
@@ -38,13 +40,10 @@ div.dialog {
         background-color: #fff;
         border-radius: 5px;
         box-shadow: 0 10px 20px @gray6;
-        padding: 30px;
+        padding: @gap5;
         text-align: center;
 
         div.prompt {
-            font-size: 18px;
-            line-height: 27px;
-
             strong.name {
                 color: @theme-color;
             }
